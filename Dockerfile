@@ -1,5 +1,5 @@
 # Use a slim Ruby image as the base
-FROM ruby:3.4-slim
+FROM ruby:4.0-slim
 
 # Set environment variables for UTF-8 encoding and non-interactive package installation
 ENV LANG=C.UTF-8 \
