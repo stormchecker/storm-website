@@ -26,6 +26,8 @@ The publications in this category present functionality from which a substantial
 {% bibliography --group_by year --query @*[category=feature] %}
 
 ## Tools using Storm
+- [Caesar](https://www.caesarverifier.org/): Deductive verifier for probabilistic programs
+- [CONVINCE](https://convince-project.github.io): Open source toolbox to improve robust robot deliberation with the help of planning, learning, and model checking techniques
 - [COOL-MC](https://github.com/LAVA-LAB/COOL-MC): Combining single-agent and multi-agent reinforcement learning with model checking
 - [jajapy](https://github.com/Rapfff/jajapy): Baum-Welch algorithm on various kinds of Markov models
 - [Momba](https://momba.dev/): Python framework for dealing with quantitative models centered around the JANI-model interchange format
