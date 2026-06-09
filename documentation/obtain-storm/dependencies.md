@@ -44,7 +44,7 @@ Recommended:
 ## OS specific preparations
 
 We collected some platform specific hints to ease the installation of Storm on the supported operating systems.
-Since Storm has some optional dependencies that enhance it's functionality, and some dependencies that are strictly required, we show how to install both the *required* and *recommended* dependencies.
+Since Storm has some optional dependencies that enhance its functionality, and some dependencies that are strictly required, we show how to install both the *required* and *recommended* dependencies.
 The installation instructions of the *recommended* dependencies already include the *required* dependencies.
 
 {:.alert .alert-info}
