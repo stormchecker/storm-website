@@ -1,7 +1,6 @@
 _site/
 .idea/
 .jekyll-cache/
-Gemfile.lock
 vendor/
 .bundle
 .DS_Store
