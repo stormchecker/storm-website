@@ -1,90 +1,276 @@
----
----
-References
-==========
+% References
+% ==========
+%
+% PLEASE READ THIS BEFORE ADDING ENTRIES:
+%
+% To easily spot duplicates, sort by
+%  1. Year (descending)
+%  2. Last name of first author
+%
+% For cite keys please use the existing scheme:
+%  - 1 Author: First three letters of author last name + year
+%  - 2 or more authors: First letter of each author's last name + year
+%  - Append a,b,c, ... in case this yields duplicates
+%  - Drop non-ASCII characters like accents
+%
+% The bibtex entries are based on the DBLP bibtex export using the condensed format.
+%
+% If the publication shall appear on the "Publications"-webpage, specify a category-field with a value in [tool, competition, tutorial, feature, using]
+%
+% Other (non-standard) fields are
+%  - arxiv-id: Identifier that can be set if the paper is (also) on arXiv.
+%  - artifact: Link to an artifact with supplemental material.
+%  - repo: Link to a repository related to the publication.
+%  - website: Link to a website related to the publication.
+%  - pdf-url: An (external!) link to a pdf file.
+%    You may also upload a pdf to /files/<cite key>.pdf. In that case no bibtex field has to be specified.
+%
+% More custom fields can be added by editing the corresponding bib layout (_layouts/bib.html)
 
-PLEASE READ THIS BEFORE ADDING ENTRIES:
+% 2026
+%%%%%%
 
-To easily spot duplicates, sort by
- 1. Year (descending)
- 2. Last name of first author
+@article{ABCJKM26,
+  category     = {using},
+  author       = {Roman Andriushchenko and
+                  Alexander Bork and
+                  Milan Ceska and
+                  Sebastian Junges and
+                  Joost{-}Pieter Katoen and
+                  Filip Mac{\'{a}}k},
+  title        = {Search and Explore: Symbiotic Policy Synthesis in POMDPs},
+  journal      = {Formal Methods Syst. Des.},
+  volume       = {68},
+  number       = {1},
+  pages        = {4},
+  year         = {2026},
+  doi          = {10.1007/S10703-025-00488-Z},
+  arxiv-id     = {2305.14149},
+  artifact     = {https://zenodo.org/doi/10.5281/zenodo.7874513},
+  biburl       = {https://dblp.org/rec/journals/fmsd/AndriushchenkoBCJKM26.bib}
+}
 
-For cite keys please use the existing scheme:
- - 1 Author: First three letters of author last name + year
- - 2 or more authors: First letter of each author's last name + year
- - Append a,b,c, ... in case this yields duplicates
-Drop non-ASCII characters like accents
+@inproceedings{IKMQ26,
+  category     = {feature},
+  author       = {Julius Ide and
+                  Joost{-}Pieter Katoen and
+                  Hannah Mertens and
+                  Tim Quatmann},
+  title        = {Multiple Long-Run and omega-Regular Objectives in {MDP}s},
+  booktitle    = {{TACAS} {(1)}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {526--546},
+  publisher    = {Springer},
+  year         = {2026},
+  doi          = {10.1007/978-3-032-22752-2_27},
+  artifact     = {https://doi.org/10.5281/zenodo.18194070},
+  biburl       = {https://dblp.org/rec/conf/tacas/IdeKMQ26.bib}
+}
 
-The bibtex entries are based on the DBLP bibtex export using the condensed format.
+@inproceedings{SMST26,
+    category  = {using},
+    author    = {Skurka, Antonina and van der Maas, Luko and Junges, Sebastian and Torfah, Hazem},
+    title     = {Learning Robust Markov Models for Safe Runtime Monitoring},
+    year      = {2026},
+    publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+    doi       = {10.65109/JAKK2294},
+    booktitle = {{AAMAS}},
+    pages     = {2931–2940},
+    series    = {AAMAS '26},
+    arxiv-id  = {2602.14987},
+    artifact  = {https://doi.org/10.5281/zenodo.18631203},
+}
 
-If the publication shall appear on the "Publications"-webpage, specify a category-field with a value in [tool, competition, feature, using]
+@inproceedings{VHJKQ26,
+  category     = {tutorial},
+  author       = {Matthias Volk and
+                  Linus Heck and
+                  Sebastian Junges and
+                  Joost{-}Pieter Katoen and
+                  Tim Quatmann},
+  title        = {Probabilistic Model Checking Taken by Storm - {A} Tutorial on the
+                  Probabilistic Model Checker Storm},
+  booktitle    = {{FM} {(2)}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {524--549},
+  publisher    = {Springer},
+  year         = {2026},
+  doi          = {10.1007/978-3-032-26220-2_25},
+  arxiv-id     = {2603.15559},
+  artifact     = {https://doi.org/10.5281/zenodo.18955665},
+  repo         = {https://github.com/stormchecker/stormpyter/tree/master/tutorial_orchard},
+  biburl       = {https://dblp.org/rec/conf/fm/VolkHJKQ26.bib}
+}
 
-Other (non-standard) fields are
- - arxiv-id: Identifier that can be set if the paper is (also) on arXiv
- - material: Link to supplemental material (e.g. an artifact or a repository)
- - website: Link to a website related to the publication
- - pdf-url: An (external!) link to a pdf file.
-   You may also upload a pdf to /files/<cite key>.pdf. In that case no bibtex field has to be specified
+% 2025
+%%%%%%
 
-More custom fields can be added by editing the corresponding bib layout (_layouts/bib.html)
+@inproceedings{BS25,
+  category     = {using},
+  author       = {Suguman Bansal and
+                  Ramneet Singh},
+  title        = {{INTERLEAVE:} {A} Faster Symbolic Algorithm for Maximal End Component
+                  Decomposition},
+  booktitle    = {{CAV} {(2)}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {147--168},
+  publisher    = {Springer},
+  year         = {2025},
+  doi          = {10.1007/978-3-031-98679-6_7},
+  arxiv-id     = {2505.20748},
+  repo         = {https://github.com/Ramneet-Singh/storm-masters-thesis},
+  biburl       = {https://dblp.org/rec/conf/cav/BansalS25.bib}
+}
+
+@inproceedings{BKQS25,
+  category     = {feature},
+  author       = {Alexander Bork and
+                  Joost{-}Pieter Katoen and
+                  Tim Quatmann and
+                  Svenja Stein},
+  title        = {Multi-Cost-Bounded Reachability Analysis of {POMDP}s},
+  booktitle    = {{UAI}},
+  series       = {Proceedings of Machine Learning Research},
+  pages        = {355--387},
+  publisher    = {{PMLR}},
+  year         = {2025},
+  url          = {https://proceedings.mlr.press/v286/bork25a.html},
+  artifact     = {https://doi.org/10.5281/ZENODO.15642233},
+  biburl       = {https://dblp.org/rec/conf/uai/BorkKQS25.bib}
+}
+
+@inproceedings{CJSS25,
+  category     = {feature},
+  author       = {Krishnendu Chatterjee and
+                  Mahdi JafariRaviz and
+                  Raimundo Saona and
+                  Jakub Svoboda},
+  title        = {Value Iteration with Guessing for {M}arkov Chains and {M}arkov Decision
+                  Processes},
+  booktitle    = {{TACAS} {(2)}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {217--236},
+  publisher    = {Springer},
+  year         = {2025},
+  doi          = {10.1007/978-3-031-90653-4_11},
+  arxiv-id     = {2505.06769},
+  biburl       = {https://dblp.org/rec/conf/tacas/ChatterjeeJSS25.bib}
+}
+
+@inproceedings{CQSWWZ25,
+  category     = {feature},
+  author       = {Krishnendu Chatterjee and
+                  Tim Quatmann and
+                  Maximilian Sch{\"{a}}ffeler and
+                  Maximilian Weininger and
+                  Tobias Winkler and
+                  Daniel Zilken},
+  title        = {Fixed Point Certificates for Reachability and Expected Rewards in
+                  {MDP}s},
+  booktitle    = {{TACAS} {(2)}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {130--151},
+  publisher    = {Springer},
+  year         = {2025},
+  arxiv-id     = {2501.11467},
+  artifact     = {https://doi.org/10.5281/zenodo.14626586},
+  doi          = {10.1007/978-3-031-90653-4_7},
+  biburl       = {https://dblp.org/rec/conf/tacas/ChatterjeeQSWWZ25.bib}
+}
+
+@inproceedings{HQSKJ25,
+  category     = {feature},
+  author       = {Linus Heck and
+                  Tim Quatmann and
+                  Jip Spel and
+                  Joost{-}Pieter Katoen and
+                  Sebastian Junges},
+  title        = {Generalized Parameter Lifting: Finer Abstractions for Parametric Markov
+                  Chains},
+  booktitle    = {{ATVA}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {16145},
+  pages        = {207--230},
+  publisher    = {Springer},
+  year         = {2025},
+  arxiv-id     = {2504.05965},
+  doi          = {10.1007/978-3-032-08707-2_10},
+  artifact     = {https://doi.org/10.5281/zenodo.15837972},
+  biburl       = {https://dblp.org/rec/conf/atva/HeckQSKJ25.bib}
+}
+
+@inproceedings{MJ25,
+  category     = {using},
+  author       = {Luko van der Maas and
+                  Sebastian Junges},
+  title        = {Learning Verified Monitors for Hidden Markov Models},
+  booktitle    = {{ATVA}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {180--203},
+  publisher    = {Springer},
+  year         = {2025},
+  doi          = {10.1007/978-3-032-08707-2_9},
+  arxiv-id     = {2504.05963},
+  repo         = {https://github.com/lukovdm/monitor-conformence},
+  artifact     = {https://doi.org/10.5281/zenodo.15846772},
+  biburl       = {https://dblp.org/rec/conf/atva/MaasJ25.bib}
+}
+
+@article{MKQW25,
+  category     = {feature},
+  author       = {Hannah Mertens and
+                  Joost{-}Pieter Katoen and
+                  Tim Quatmann and
+                  Tobias Winkler},
+  title        = {Computing Expected Visiting Times and Stationary Distributions in
+                  {M}arkov Chains: Fast and Accurate},
+  journal      = {J. Autom. Reason.},
+  volume       = {69},
+  number       = {3},
+  pages        = {23},
+  year         = {2025},
+  doi          = {10.1007/S10817-025-09736-7},
+  arxiv-id     = {2401.10638},
+  artifact     = {https://doi.org/10.5281/zenodo.13919108},
+  biburl       = {https://dblp.org/rec/journals/jar/MertensKQW25.bib}
+}
+
+@inproceedings{PMACC25,
+  category     = {using},
+  author       = {Francesco Pontiggia and
+                  Filip Mac{\'{a}}k and
+                  Roman Andriushchenko and
+                  Michele Chiari and
+                  Milan Ceska},
+  title        = {Decentralized Planning Using Probabilistic Hyperproperties},
+  booktitle    = {{AAMAS}},
+  pages        = {1688--1697},
+  publisher    = {International Foundation for Autonomous Agents and Multiagent Systems
+                  / {ACM}},
+  year         = {2025},
+  doi          = {10.5555/3709347.3743804},
+  arxiv-id     = {2502.13621},
+  repo         = {https://github.com/francescopont/hyper-synthesis},
+  biburl       = {https://dblp.org/rec/conf/ifaamas/PontiggiaMAC025.bib}
+}
+
+@article{Qua25,
+  category     = {feature},
+  author       = {Tim Quatmann},
+  title        = {What is the best algorithm for {MDP} model checking?},
+  journal      = {Int. J. Softw. Tools Technol. Transf.},
+  volume       = {27},
+  number       = {4},
+  pages        = {431--437},
+  year         = {2025},
+  doi          = {10.1007/S10009-025-00810-4},
+  artifact     = {https://doi.org/10.5281/zenodo.7695315},
+  biburl       = {https://dblp.org/rec/journals/sttt/Quatmann25.bib}
+}
 
 
 % 2024
 %%%%%%
-
-@article{ABBCGHHIJJJKKKMPPQRTVWZ24,
-  category     = {competition},
-  author       = {Roman Andriushchenko and
-                  Alexander Bork and
-                  Carlos E. Budde and
-                  Milan Ceska and
-                  Kush Grover and
-                  Ernst Moritz Hahn and
-                  Arnd Hartmanns and
-                  Bryant Israelsen and
-                  Nils Jansen and
-                  Joshua Jeppson and
-                  Sebastian Junges and
-                  Maximilian A. K{\"{o}}hl and
-                  Bettina K{\"{o}}nighofer and
-                  Jan K{\v r}et{\' i}nsk{\' y} and
-                  Tobias Meggendorfer and
-                  David Parker and
-                  Stefan Pranger and
-                  Tim Quatmann and
-                  Enno Ruijters and
-                  Landon Taylor and
-                  Matthias Volk and
-                  Maximilian Weininger and
-                  Zhen Zhang},
-  title        = {Tools at the Frontiers of Quantitative Verification},
-  journal      = {CoRR},
-  volume       = {abs/2405.13583},
-  doi          = {10.48550/ARXIV.2405.13583},
-  year         = {2024},
-  website      = {https://qcomp.org}
-}
-
-
-@inproceedings{BCGKM24,
-  category     = {using},
-  author       = {Alexander Bork and
-                  Debraj Chakraborty and
-                  Kush Grover and
-                  Jan Kret{\'{\i}}nsk{\'{y}} and
-                  Stefanie Mohr},
-
-  title        = {Learning Explainable and Better Performing Representations of {POMDP}
-                  Strategies},
-  booktitle    = {{TACAS} {(2)}},
-  series       = {{LNCS}},
-  volume       = {14571},
-  pages        = {299--319},
-  publisher    = {Springer},
-  year         = {2024},
-  doi          = {10.1007/978-3-031-57249-4_15},
-  material     = {https://doi.org/10.5281/zenodo.10433183},
-}
 
 @inproceedings{BVJSJ24,
   category     = {using},
@@ -102,7 +288,61 @@ More custom fields can be added by editing the corresponding bib layout (_layout
   year         = {2024},
   doi          = {10.1007/978-3-031-57249-4_13},
   arxiv-id     = {2401.06574},
-  material     = {https://doi.org/10.5281/zenodo.10438984},
+  artifact     = {https://doi.org/10.5281/zenodo.10438984},
+  biburl       = {https://dblp.org/rec/conf/tacas/BadingsVJSJ24.bib}
+}
+
+@inproceedings{BCGKM24,
+  category     = {using},
+  author       = {Alexander Bork and
+                  Debraj Chakraborty and
+                  Kush Grover and
+                  Jan Kret{\'{\i}}nsk{\'{y}} and
+                  Stefanie Mohr},
+  title        = {Learning Explainable and Better Performing Representations of {POMDP}
+                  Strategies},
+  booktitle    = {{TACAS} {(2)}},
+  series       = {{LNCS}},
+  volume       = {14571},
+  pages        = {299--319},
+  publisher    = {Springer},
+  year         = {2024},
+  doi          = {10.1007/978-3-031-57249-4_15},
+  arxiv-id     = {2401.07656},
+  artifact     = {https://doi.org/10.5281/zenodo.10433183},
+  biburl       = {https://dblp.org/rec/conf/tacas/BorkCGKM24.bib}
+}
+
+@article{EN24,
+  category     = {using},
+  author       = {Tamme Emunds and
+                  Nils Nie{\ss}en},
+  title        = {Evaluating railway junction infrastructure: A queueing-based,
+                  timetable-independent analysis},
+  journal      = {Transportation Research Part C: Emerging Technologies},
+  volume       = {165},
+  pages        = {104704},
+  year         = {2024},
+  doi          = {10.1016/j.trc.2024.104704},
+  url          = {https://doi.org/10.1016/j.trc.2024.104704}
+}
+
+@inproceedings{HJQV24,
+  category     = {using},
+  author       = {Christian Hensel and
+                  Sebastian Junges and
+                  Tim Quatmann and
+                  Matthias Volk},
+  title        = {Riding the Storm in a Probabilistic Model Checking Landscape},
+  booktitle    = {Principles of Verification {(2)}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {15261},
+  pages        = {98--114},
+  publisher    = {Springer},
+  year         = {2024},
+  doi          = {10.1007/978-3-031-75775-4_5},
+  website      = {https://stormchecker.org/publications/festschrift},
+  biburl       = {https://dblp.org/rec/conf/birthday/HenselJQ025.bib}
 }
 
 @article{JAHJKQV24,
@@ -122,7 +362,9 @@ More custom fields can be added by editing the corresponding bib layout (_layout
   doi          = {10.1007/S10703-023-00442-X},
   year         = {2024},
   arxiv-id     = {1903.07993},
-  website      = {https://moves-rwth.github.io/prophesy/},
+  artifact     = {https://doi.org/10.5281/zenodo.7697154},
+  repo         = {https://github.com/moves-rwth/prophesy/},
+  biburl       = {https://dblp.org/rec/journals/fmsd/JungesAHJKQV24.bib}
 }
 
 @inproceedings{MKQW24,
@@ -141,23 +383,26 @@ More custom fields can be added by editing the corresponding bib layout (_layout
   doi          = {10.1007/978-3-031-57249-4_12},
   year         = {2024},
   arxiv-id     = {2401.10638},
-  material     = {https://doi.org/10.5281/zenodo.10438916},
+  artifact     = {https://doi.org/10.5281/zenodo.10438916},
+  biburl       = {https://dblp.org/rec/conf/tacas/MertensKQW24.bib}
 }
 
-@inproceedings{WVJH24,  
-category       = {using},
+@inproceedings{WVJH24,
+  category     = {using},
   author       = {Kazuki Watanabe and
                   Marck van der Vegt and
                   Sebastian Junges and
                   Ichiro Hasuo},
   title        = {Compositional Value Iteration with {P}areto Caching},
-  booktitle    = {{CAV}},
-  series       = {{LNCS}},
-  note = {to appear},
+  booktitle    = {{CAV} {(3)}},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {467--491},
   publisher    = {Springer},
   year         = {2024},
+  doi          = {10.1007/978-3-031-65633-0_21},
   arxiv-id     = {2405.10099},
-  material     = {https://doi.org/10.5281/zenodo.10946420}
+  artifact     = {https://doi.org/10.5281/zenodo.10946420},
+  biburl       = {https://dblp.org/rec/conf/cav/WatanabeVJH24.bib}
 }
 
 @inproceedings{WVHRJ24,
@@ -176,32 +421,51 @@ category       = {using},
   publisher    = {Springer},
   year         = {2024},
   arxiv-id     = {2401.08377},
-  material     = {https://doi.org/10.5281/zenodo.10440296},
+  artifact     = {https://doi.org/10.5281/zenodo.10440296},
   doi          = {10.1007/978-3-031-57249-4_14},
+  biburl       = {https://dblp.org/rec/conf/tacas/WatanabeVHRJ24.bib}
 }
 
 
 % 2023
 %%%%%%
 
-@inproceedings{ABCJKM23,
-  category     = {using},
+@article{ABBCGHHIJJJKKKMPPQRTVWZ23,
+  category     = {competition},
   author       = {Roman Andriushchenko and
                   Alexander Bork and
+                  Carlos E. Budde and
                   Milan Ceska and
+                  Kush Grover and
+                  Ernst Moritz Hahn and
+                  Arnd Hartmanns and
+                  Bryant Israelsen and
+                  Nils Jansen and
+                  Joshua Jeppson and
                   Sebastian Junges and
-                  Joost{-}Pieter Katoen and
-                  Filip Mac{\'{a}}k},
-  title        = {Search and Explore: Symbiotic Policy Synthesis in POMDPs},
-  booktitle    = {{CAV} {(3)}},
-  series       = {{LNCS}},
-  volume       = {13966},
-  pages        = {113--135},
+                  Maximilian A. K{\"{o}}hl and
+                  Bettina K{\"{o}}nighofer and
+                  Jan Kret{\'{\i}}nsk{\'{y}} and
+                  Tobias Meggendorfer and
+                  David Parker and
+                  Stefan Pranger and
+                  Tim Quatmann and
+                  Enno Ruijters and
+                  Landon Taylor and
+                  Matthias Volk and
+                  Maximilian Weininger and
+                  Zhen Zhang},
+  title        = {Tools at the Frontiers of Quantitative Verification - QComp 2023 Competition
+                  Report},
+  booktitle    = {TOOLympics@ETAPS},
+  series       = {Lecture Notes in Computer Science},
+  pages        = {90--146},
   publisher    = {Springer},
   year         = {2023},
-  doi          = {10.1007/978-3-031-37709-9_6},
-  arxiv-id     = {2305.14149},
-  material     = {https://zenodo.org/doi/10.5281/zenodo.7874513},
+  doi          = {10.1007/978-3-031-67695-6_4},
+  arxiv-id     = {2405.13583},
+  website      = {https://qcomp.org},
+  biburl       = {https://dblp.org/rec/conf/toolympics/AndriushchenkoB23.bib}
 }
 
 @inproceedings{CJJT23,
@@ -217,6 +481,7 @@ category       = {using},
   year         = {2023},
   doi          = {10.1609/AAAI.V37I12.26723},
   arxiv-id     = {2204.00755},
+  biburl       = {https://dblp.org/rec/conf/aaai/Carr0JT23.bib}
 }
 
 @inproceedings{HJQW23,
@@ -234,7 +499,8 @@ category       = {using},
   year         = {2023},
   doi          = {10.1007/978-3-031-30823-9_24},
   arxiv-id     = {2301.10197},
-  material     = {https://doi.org/10.5281/zenodo.7509474},
+  artifact     = {https://doi.org/10.5281/zenodo.7509474},
+  biburl       = {https://dblp.org/rec/conf/tacas/HartmannsJQW23.bib}
 }
 
 @inproceedings{JVIRWBMZWZ23,
@@ -258,8 +524,8 @@ category       = {using},
   publisher    = {Springer},
   year         = {2023},
   doi          = {10.1007/978-3-031-43835-6_7},
-  material     = {https://staminachecker.org/results/qest23},
-  website      = {https://staminachecker.org},
+  website      = {https://staminachecker.org/results/qest23},
+  biburl       = {https://dblp.org/rec/conf/qest/JeppsonVIRWBMZWZ23.bib}
 }
 
 @inproceedings{VJJ23,
@@ -275,6 +541,8 @@ category       = {using},
   publisher    = {Springer},
   year         = {2023},
   doi          = {10.1007/978-3-031-30823-9_26},
+  arxiv-id     = {2301.11296},
+  biburl       = {https://dblp.org/rec/conf/tacas/VegtJJ23.bib}
 }
 
 
@@ -297,7 +565,8 @@ category       = {using},
   year      = {2022},
   doi       = {10.1007/978-3-031-13188-2_2},
   arxiv-id  = {2205.08300},
-  material  = {https://doi.org/10.5281/zenodo.6523863},
+  artifact  = {https://doi.org/10.5281/zenodo.6523863},
+  biburl    = {https://dblp.org/rec/conf/cav/BadingsJJSV22.bib}
 }
 
 @article{BCJJKT22,
@@ -313,24 +582,8 @@ category       = {using},
   year      = {2022},
   doi       = {10.1007/s10009-022-00673-z},
   arxiv-id  = {2112.13020},
-  material  = {https://doi.org/10.5281/zenodo.6674060},
-}
-
-@inproceedings{BKQ22,
-  category     = {feature},
-  author       = {Alexander Bork and
-                  Joost{-}Pieter Katoen and
-                  Tim Quatmann},
-  title        = {Under-Approximating Expected Total Rewards in {PO{MDP}}s},
-  booktitle    = {{TACAS} {(2)}},
-  series       = {{LNCS}},
-  volume       = {13244},
-  pages        = {22--40},
-  publisher    = {Springer},
-  year         = {2022},
-  doi          = {10.1007/978-3-030-99527-0_2},
-  material     = {https://doi.org/10.5281/zenodo.5643643},
-  arxiv-id     = {2201.08772},
+  artifact  = {https://doi.org/10.5281/zenodo.6674060},
+  biburl    = {https://dblp.org/rec/journals/sttt/BadingsCJJKT22.bib}
 }
 
 @inproceedings{BVKKS22,
@@ -350,7 +603,26 @@ category       = {using},
   year      = {2022},
   doi       = {10.1007/978-3-031-06773-0_38},
   arxiv-id  = {2202.02829},
-  material  = {https://doi.org/10.5281/zenodo.5834212},
+  artifact  = {https://doi.org/10.5281/zenodo.5834212},
+  biburl    = {https://dblp.org/rec/conf/nfm/BasgozeVKKS22.bib}
+}
+
+@inproceedings{BKQ22,
+  category     = {feature},
+  author       = {Alexander Bork and
+                  Joost{-}Pieter Katoen and
+                  Tim Quatmann},
+  title        = {Under-Approximating Expected Total Rewards in {PO{MDP}}s},
+  booktitle    = {{TACAS} {(2)}},
+  series       = {{LNCS}},
+  volume       = {13244},
+  pages        = {22--40},
+  publisher    = {Springer},
+  year         = {2022},
+  doi          = {10.1007/978-3-030-99527-0_2},
+  artifact     = {https://doi.org/10.5281/zenodo.5643643},
+  arxiv-id     = {2201.08772},
+  biburl       = {https://dblp.org/rec/conf/tacas/BorkKQ22.bib}
 }
 
 @article{CJJKT22,
@@ -365,7 +637,8 @@ category       = {using},
   year      = {2022},
   doi       = {10.1109/TAC.2021.3133265},
   arxiv-id  = {2107.00108},
-  material  = {https://doi.org/10.5281/zenodo.5745850},
+  artifact  = {https://doi.org/10.5281/zenodo.5745850},
+  biburl    = {https://dblp.org/rec/journals/tac/CubuktepeJJKT22.bib}
 }
 
 @article{HJKQV22,
@@ -383,8 +656,9 @@ category       = {using},
   year      = {2022},
   doi       = {10.1007/s10009-021-00633-z},
   arxiv-id  = {2002.07080},
-  website   = {https://stormchecker.org/benchmarks.html},
-  material  = {https://doi.org/10.5281/zenodo.4017717},
+  website   = {https://www.stormchecker.org/benchmarks.html#the-probabilistic-model-checker-storm-2},
+  artifact  = {https://doi.org/10.5281/zenodo.4017717},
+  biburl    = {https://dblp.org/rec/journals/sttt/HenselJKQV22.bib}
 }
 
 @inproceedings{HSJMK22,
@@ -403,6 +677,7 @@ category       = {using},
   year         = {2022},
   doi          = {10.1007/978-3-030-94583-1_7},
   arxiv-id     = {2111.04407},
+  biburl       = {https://dblp.org/rec/conf/vmcai/HeckSJMK22.bib}
 }
 
 @inproceedings{JJK22,
@@ -419,14 +694,16 @@ category       = {using},
   doi          = {10.1007/978-3-031-22337-2_20},
   year         = {2022},
   arxiv-id     = {2207.06801},
+  biburl       = {https://dblp.org/rec/conf/birthday/0001JK22.bib}
 }
 
 @inproceedings{JS22,
   category     = {using},
-  author       = {Sebastian Junges and Matthijs T. J. Spaan},
+  author       = {Sebastian Junges and
+                  Matthijs T. J. Spaan},
   title        = {Abstraction-Refinement for Hierarchical Probabilistic Models},
   booktitle    = {{CAV}},
-  material     = {https://doi.org/10.5281/zenodo.6524788},
+  artifact     = {https://doi.org/10.5281/zenodo.6524788},
   year         = {2022},
   pages        = {102--123},
   series       = {{LNCS}},
@@ -435,6 +712,7 @@ category       = {using},
   doi          = {10.1007/978-3-031-13185-1_6},
   arxiv-id     = {2206.02653},
   repo         = {https://github.com/sjunges/level-up},
+  biburl       = {https://dblp.org/rec/conf/cav/JungesS22.bib}
 }
 
 @article{QJK22,
@@ -449,7 +727,27 @@ category       = {using},
   pages        = {33--86},
   year         = {2022},
   doi          = {10.1007/s10703-021-00364-6},
-  material     = {https://doi.org/10.5281/zenodo.4298643},
+  arxiv-id     = {1704.06648},
+  artifact     = {https://doi.org/10.5281/zenodo.4298643},
+  biburl       = {https://dblp.org/rec/journals/fmsd/QuatmannJK22.bib}
+}
+
+@article{PHKSN22,
+  category     = {using},
+  author       = {Tatjana Petrov and
+                  Matej Hajnal and
+                  Julia Klein and
+                  David Safr{\'{a}}nek and
+                  Morgane Nouvian},
+  title        = {Extracting individual characteristics from population data reveals
+                  a negative social effect during honeybee defence},
+  journal      = {PLoS Comput. Biol.},
+  volume       = {18},
+  number       = {9},
+  pages        = {1010305},
+  year         = {2022},
+  doi          = {10.1371/JOURNAL.PCBI.1010305},
+  biburl       = {https://dblp.org/rec/journals/ploscb/PetrovHKSN22.bib}
 }
 
 @inproceedings{SSK22,
@@ -465,7 +763,8 @@ category       = {using},
   publisher    = {Springer},
   year         = {2022},
   doi          = {10.1007/978-3-031-16336-4_6},
-  material     = {https://doi.org/10.5281/zenodo.6793377},
+  artifact     = {https://doi.org/10.5281/zenodo.6793377},
+  biburl       = {https://dblp.org/rec/conf/qest/SpelSK22.bib}
 }
 
 @article{VBKA22,
@@ -481,7 +780,8 @@ category       = {using},
   pages     = {37--57},
   year      = {2022},
   doi       = {10.1007/s00446-021-00408-4},
-  material  = {https://github.com/moves-rwth/optimal-bias-synthesis},
+  repo      = {https://github.com/moves-rwth/optimal-bias-synthesis},
+  biburl    = {https://dblp.org/rec/journals/dc/VolkBKA22.bib}
 }
 
 @article{WKN22,
@@ -499,6 +799,7 @@ category       = {using},
   year      = {2022},
   doi       = {10.1007/s10009-022-00652-4},
   website   = {https://www.stormchecker.org/publications/dfts-for-railway-stations},
+  biburl    = {https://dblp.org/rec/journals/sttt/WeikVKN22.bib}
 }
 
 
@@ -507,15 +808,16 @@ category       = {using},
 
 @article{CHJK21,
   category  = {using},
-  author    = {Milan Češka  and
+  author    = {Milan Ceska and
                Christian Hensel and
                Sebastian Junges and
-               Joost-Pieter Katoen},
+               Joost{-}Pieter Katoen},
   title     = {Counterexample-guided Inductive Synthesis for Probabilistic Systems},
   journal   = {{Formal Asp. Comput.}},
   year      = {2021},
   doi       = {10.1007/s00165-021-00547-2},
   repo      = {https://github.com/randriu/synthesis},
+  biburl    = {https://dblp.org/rec/journals/fac/0002HJK21.bib}
 }
 
 @inproceedings{CJJMST21,
@@ -532,6 +834,8 @@ category       = {using},
   publisher = {{AAAI} Press},
   year      = {2021},
   doi       = {10.1609/AAAI.V35I13.17401},
+  arxiv-id  = {2009.11459},
+  biburl    = {https://dblp.org/rec/conf/aaai/Cubuktepe0JMST21.bib}
 }
 
 @inproceedings{HKKS21,
@@ -548,11 +852,12 @@ category       = {using},
   publisher    = {Springer},
   doi          = {10.1007/978-3-030-85172-9_3},
   year         = {2021},
+  biburl       = {https://dblp.org/rec/conf/qest/HartmannsKKS21.bib}
 }
 
 @inproceedings{HJVMSV21,
- category     = {using},
- author       = {Steven Holtzen and
+  category     = {using},
+  author       = {Steven Holtzen and
                   Sebastian Junges and
                   Marcell Vazquez{-}Chanlatte and
                   Todd D. Millstein and
@@ -567,7 +872,8 @@ category       = {using},
   year         = {2021},
   doi          = {10.1007/978-3-030-81688-9_27},
   arxiv-id     = {2105.12326},
-  material     = {https://doi.org/10.5281/zenodo.4726264},
+  artifact     = {https://doi.org/10.5281/zenodo.4726264},
+  biburl       = {https://dblp.org/rec/conf/cav/HoltzenJVMSB20.bib}
 }
 
 @inproceedings{JJS21,
@@ -583,8 +889,9 @@ category       = {using},
   publisher    = {Springer},
   year         = {2021},
   doi          = {10.1007/978-3-030-81688-9_28},
-  material     = {https://doi.org/10.5281/zenodo.4784940},
+  artifact     = {https://doi.org/10.5281/zenodo.4784940},
   arxiv-id     = {2007.00085},
+  biburl       = {https://dblp.org/rec/conf/cav/JungesJS20.bib}
 }
 
 @inproceedings{JTS21,
@@ -599,8 +906,10 @@ category       = {using},
   publisher = {Springer},
   year      = {2021},
   doi       = {10.1007/978-3-030-81688-9_26},
+  arxiv-id  = {2105.12322},
   repo      = {https://github.com/monitoring-MDPs/premise},
-  material  = {https://zenodo.org/record/4724623},
+  artifact  = {https://zenodo.org/record/4724623},
+  biburl    = {https://dblp.org/rec/conf/cav/JungesTS20.bib}
 }
 
 @inproceedings{KKVB21,
@@ -617,6 +926,7 @@ category       = {using},
   publisher = {Springer},
   year      = {2021},
   doi       = {10.1007/978-3-030-76384-8_12},
+  biburl    = {https://dblp.org/rec/conf/nfm/0002K0B21.bib}
 }
 
 @inproceedings{KKVZS21,
@@ -633,6 +943,7 @@ category       = {using},
   publisher = {{IEEE}},
   year      = {2021},
   doi       = {10.1109/LADC53747.2021.9672579},
+  biburl    = {https://dblp.org/rec/conf/ladc/KhanKVZS21.bib}
 }
 
 @inproceedings{KVKBB21,
@@ -648,6 +959,7 @@ category       = {using},
   publisher = {{IEEE}},
   year      = {2021},
   doi       = {10.1109/DSN48987.2021.00056},
+  biburl    = {https://dblp.org/rec/conf/dsn/00020KBB21.bib}
 }
 
 @inproceedings{PKPB21,
@@ -667,6 +979,7 @@ category       = {using},
   doi          = {10.1007/978-3-030-88885-5_15},
   arxiv-id     = {2105.12588},
   website      = {https://tempest-synthesis.org},
+  biburl       = {https://dblp.org/rec/conf/atva/PrangerKPB21.bib}
 }
 
 @inproceedings{QK21,
@@ -682,22 +995,8 @@ category       = {using},
   year      = {2021},
   doi       = {10.1007/978-3-030-72016-2_13},
   arxiv-id  = {2010.13566},
-  material  = {https://doi.org/10.5281/zenodo.4121878},
-}
-
-@inproceedings{SJK21,
-  category     = {feature},
-  author       = {Jip Spel and
-                  Sebastian Junges and
-                  Joost{-}Pieter Katoen},
-  title        = {Finding Provably Optimal Markov Chains},
-  booktitle    = {{TACAS}},
-  series       = {{LNCS}},
-  volume       = {12651},
-  pages        = {173--190},
-  publisher    = {Springer},
-  year         = {2021},
-  doi          = {10.1007/978-3-030-72016-2_10},
+  artifact  = {https://doi.org/10.5281/zenodo.4121878},
+  biburl    = {https://dblp.org/rec/conf/tacas/QuatmannK21.bib}
 }
 
 @inproceedings{SK21,
@@ -713,6 +1012,23 @@ category       = {using},
   year         = {2021},
   doi          = {10.1007/978-3-030-86772-0_20},
   arxiv-id     = {2105.14371},
+  biburl       = {https://dblp.org/rec/conf/ecsqaru/SalmaniK21.bib}
+}
+
+@inproceedings{SJK21,
+  category     = {feature},
+  author       = {Jip Spel and
+                  Sebastian Junges and
+                  Joost{-}Pieter Katoen},
+  title        = {Finding Provably Optimal Markov Chains},
+  booktitle    = {{TACAS}},
+  series       = {{LNCS}},
+  volume       = {12651},
+  pages        = {173--190},
+  publisher    = {Springer},
+  year         = {2021},
+  doi          = {10.1007/978-3-030-72016-2_10},
+  biburl       = {https://dblp.org/rec/conf/tacas/SpelJK21.bib}
 }
 
 @inproceedings{ZZAAFJ21,
@@ -732,7 +1048,8 @@ category       = {using},
   year      = {2021},
   doi       = {10.1007/978-3-030-67067-2_22},
   pdf-url   = {https://arthuraa.net/docs/netter.pdf},
-  material  = {https://github.com/arthuraa/netter},
+  repo      = {https://github.com/arthuraa/netter},
+  biburl    = {https://dblp.org/rec/conf/vmcai/ZhangZAAFJ21.bib}
 }
 
 
@@ -761,6 +1078,7 @@ category       = {using},
   year      = {2020},
   doi       = {10.1007/978-3-030-83723-5_15},
   website   = {https://qcomp.org/competition/2020/},
+  biburl    = {https://dblp.org/rec/conf/isola/BuddeHKKPQTZ20.bib}
 }
 
 @inproceedings{BJKQ20,
@@ -778,7 +1096,8 @@ category       = {using},
   year      = {2020},
   doi       = {10.1007/978-3-030-59152-6_16},
   arxiv-id  = {2007.00102},
-  material  = {https://doi.org/10.5281/zenodo.3924577},
+  artifact  = {https://doi.org/10.5281/zenodo.3924577},
+  biburl    = {https://dblp.org/rec/conf/atva/BorkJKQ20.bib}
 }
 
 @inproceedings{DKQR20,
@@ -796,7 +1115,8 @@ category       = {using},
   year      = {2020},
   doi       = {10.1007/978-3-030-45190-5_19},
   arxiv-id  = {1910.11024},
-  material  = {https://doi.org/10.6084/m9.figshare.11569485},
+  artifact  = {https://doi.org/10.6084/m9.figshare.11569485},
+  biburl    = {https://dblp.org/rec/conf/tacas/DelgrangeKQR20.bib}
 }
 
 @article{HJKQ20,
@@ -812,7 +1132,8 @@ category       = {using},
   pages     = {1483--1522},
   doi       = {10.1007/s10817-020-09574-9},
   year      = {2020},
-  material  = {https://doi.org/10.5281/zenodo.3894716},
+  artifact  = {https://doi.org/10.5281/zenodo.3894716},
+  biburl    = {https://dblp.org/rec/journals/jar/HartmannsJKQ20.bib}
 }
 
 @inproceedings{JKJSB20,
@@ -830,6 +1151,7 @@ category       = {using},
   publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
   year      = {2020},
   doi       = {10.4230/LIPICS.CONCUR.2020.3},
+  biburl    = {https://dblp.org/rec/conf/concur/0001KJSB20.bib}
 }
 
 @inproceedings{SK20,
@@ -845,6 +1167,7 @@ category       = {using},
   year      = {2020},
   doi       = {10.1007/978-3-030-59854-9_9},
   arxiv-id  = {2007.15071},
+  biburl    = {https://dblp.org/rec/conf/qest/SalmaniK20.bib}
 }
 
 
@@ -866,6 +1189,7 @@ category       = {using},
   year      = {2019},
   doi       = {10.1007/978-3-030-30942-8_8},
   arxiv-id  = {1904.12371},
+  biburl    = {https://dblp.org/rec/conf/fm/CeskaHJK19.bib}
 }
 
 @inproceedings{CJJK19,
@@ -883,6 +1207,7 @@ category       = {using},
   year      = {2019},
   doi       = {10.1007/978-3-030-17465-1_10},
   arxiv-id  = {1902.05727},
+  biburl    = {https://dblp.org/rec/conf/tacas/CeskaJJK19.bib}
 }
 
 @article{GJKKV19,
@@ -900,6 +1225,7 @@ category       = {using},
   doi       = {10.1016/j.ress.2019.02.005},
   arxiv-id  = {1903.05361},
   website   = {https://www.stormchecker.org/publications/dfts-for-vehicle-guidance-systems.html},
+  biburl    = {https://dblp.org/rec/journals/ress/GhadhabJKKV19.bib}
 }
 
 @inproceedings{HHHKKKPQRS19,
@@ -924,7 +1250,8 @@ category       = {using},
   year      = {2019},
   doi       = {10.1007/978-3-030-17502-3_5},
   website   = {https://qcomp.org/competition/2019/},
-  material  = {https://doi.org/10.5281/zenodo.2628301},
+  artifact  = {https://doi.org/10.5281/zenodo.2628301},
+  biburl    = {https://dblp.org/rec/conf/tacas/HahnHHKKKPQRS19.bib}
 }
 
 @inproceedings{HKPQR19,
@@ -943,6 +1270,7 @@ category       = {using},
   year      = {2019},
   doi       = {10.1007/978-3-030-17462-0_20},
   website   = {https://qcomp.org/benchmarks/},
+  biburl    = {https://dblp.org/rec/conf/tacas/HartmannsKPQR19.bib}
 }
 
 @inproceedings{SJK19,
@@ -958,6 +1286,8 @@ category       = {using},
   publisher    = {Springer},
   year         = {2019},
   doi          = {10.1007/978-3-030-31784-3_28},
+  arxiv-id     = {1907.08491},
+  biburl       = {https://dblp.org/rec/conf/atva/SpelJK19.bib}
 }
 
 @inproceedings{VWKN19,
@@ -975,6 +1305,7 @@ category       = {using},
   publisher = {Springer},
   year      = {2019},
   doi       = {10.1007/978-3-030-27008-7_3},
+  biburl    = {https://dblp.org/rec/conf/fmics/0001WKN19.bib}
 }
 
 
@@ -996,6 +1327,8 @@ category       = {using},
   publisher = {Springer},
   year      = {2018},
   doi       = {10.1007/978-3-030-01090-4_10},
+  arxiv-id  = {1803.02884},
+  biburl    = {https://dblp.org/rec/conf/atva/CubuktepeJJKT18.bib}
 }
 
 @inproceedings{HJKQ18,
@@ -1012,7 +1345,8 @@ category       = {using},
   publisher = {Springer},
   year      = {2018},
   doi       = {10.1007/978-3-319-89963-3_19},
-  material  = {https://doi.org/10.5281/zenodo.1181896},
+  artifact  = {https://doi.org/10.5281/zenodo.1181896},
+  biburl    = {https://dblp.org/rec/conf/tacas/HartmannsJKQ18.bib}
 }
 
 @inproceedings{JJKTZH18,
@@ -1031,6 +1365,7 @@ category       = {using},
   publisher = {Springer},
   year      = {2018},
   doi       = {10.1007/978-3-319-99154-2_13},
+  biburl    = {https://dblp.org/rec/conf/qest/Junges0KTZH18.bib}
 }
 
 @inproceedings{JJWQWKB18,
@@ -1049,6 +1384,7 @@ category       = {using},
   year      = {2018},
   pdf-url   = {https://auai.org/uai2018/proceedings/papers/195.pdf},
   arxiv-id  = {1710.10294},
+  biburl    = {https://dblp.org/rec/conf/uai/Junges0WQWK018.bib}
 }
 
 @inproceedings{JKSV18,
@@ -1068,7 +1404,8 @@ category       = {using},
   doi       = {10.1007/978-3-319-91268-4_14},
   arxiv-id  = {1803.05376},
   website   = {https://www.stormchecker.org/publications/gspn-semantics-for-dfts.html},
-  material  = {https://github.com/moves-rwth/dft-gspn-examples},
+  repo      = {https://github.com/moves-rwth/dft-gspn-examples},
+  biburl    = {https://dblp.org/rec/conf/apn/JungesKS018.bib}
 }
 
 @inproceedings{QK18,
@@ -1083,8 +1420,9 @@ category       = {using},
   publisher = {Springer},
   year      = {2018},
   doi       = {10.1007/978-3-319-96145-3_37},
-  material  = {https://doi.org/10.6084/m9.figshare.6139052},
+  artifact  = {https://doi.org/10.6084/m9.figshare.6139052},
   arxiv-id  = {1804.05001},
+  biburl    = {https://dblp.org/rec/conf/cav/QuatmannK18.bib}
 }
 
 @article{VJK18,
@@ -1099,6 +1437,7 @@ category       = {using},
   pages     = {370--379},
   year      = {2018},
   doi       = {10.1109/TII.2017.2710316},
+  biburl    = {https://dblp.org/rec/journals/tii/VolkJK18.bib}
 }
 
 
@@ -1118,6 +1457,7 @@ category       = {using},
   publisher = {{IEEE} Computer Society},
   year      = {2017},
   doi       = {10.1109/SRDS.2017.22},
+  biburl    = {https://dblp.org/rec/conf/srds/AflakiVBKS17.bib}
 }
 
 @inproceedings{BDHHJT17,
@@ -1136,6 +1476,7 @@ category       = {using},
   year      = {2017},
   doi       = {10.1007/978-3-662-54580-5_9},
   website   = {https://jani-spec.org},
+  biburl    = {https://dblp.org/rec/conf/tacas/BuddeDHHJT17.bib}
 }
 
 @inproceedings{CJJKPPT17,
@@ -1156,6 +1497,7 @@ category       = {using},
   year      = {2017},
   doi       = {10.1007/978-3-662-54580-5_8},
   arxiv-id  = {1702.00063},
+  biburl    = {https://dblp.org/rec/conf/tacas/Cubuktepe0JKPPT17.bib}
 }
 
 @inproceedings{DJKV17,
@@ -1173,7 +1515,8 @@ category       = {using},
   year      = {2017},
   doi       = {10.1007/978-3-319-63390-9_31},
   arxiv-id  = {1702.04311},
-  website   = {https://stormchecker.org/benchmarks.html},
+  website   = {https://www.stormchecker.org/benchmarks.html#a-storm-is-coming-a-modern-probabilistic-model-checker-4},
+  biburl    = {https://dblp.org/rec/conf/cav/DehnertJK017.bib}
 }
 
 @inproceedings{GJKKV17,
@@ -1191,6 +1534,7 @@ category       = {using},
   publisher = {Springer},
   year      = {2017},
   doi       = {10.1007/978-3-319-66266-4_1},
+  biburl    = {https://dblp.org/rec/conf/safecomp/GhadhabJKKV17.bib}
 }
 
 @inproceedings{QJK17,
@@ -1207,7 +1551,8 @@ category       = {using},
   doi       = {10.1007/978-3-319-63387-9_7},
   year      = {2017},
   arxiv-id  = {1704.06648},
-  material  = {https://doi.org/10.5281/zenodo.4298643},
+  artifact  = {https://doi.org/10.5281/zenodo.4298643},
+  biburl    = {https://dblp.org/rec/conf/cav/QuatmannJK17.bib}
 }
 
 
@@ -1227,6 +1572,7 @@ category       = {using},
   publisher = {{IEEE} Computer Society},
   year      = {2016},
   doi       = {10.1109/SRDS.2016.048},
+  biburl    = {https://dblp.org/rec/conf/srds/DombrowskiJKG16.bib}
 }
 
 @article{DJKV16,
@@ -1239,7 +1585,8 @@ category       = {using},
   journal   = {CoRR},
   volume    = {abs/1610.08713},
   year      = {2016},
-  arxiv-id  = {1610.08713}
+  arxiv-id  = {1610.08713},
+  biburl    = {https://dblp.org/rec/journals/corr/DehnertJK016.bib}
 }
 
 @inproceedings{JDKKW16,
@@ -1257,6 +1604,7 @@ category       = {using},
   year      = {2016},
   doi       = {10.1007/978-3-319-46520-3_5},
   arxiv-id  = {1605.04477},
+  biburl    = {https://dblp.org/rec/conf/atva/0001DKKW16.bib}
 }
 
 @inproceedings{JJDTK16,
@@ -1275,6 +1623,7 @@ category       = {using},
   year      = {2016},
   doi       = {10.1007/978-3-662-49674-9_8},
   arxiv-id  = {1510.05880},
+  biburl    = {https://dblp.org/rec/conf/tacas/Junges0DTK16.bib}
 }
 
 @inproceedings{Kat16,
@@ -1285,7 +1634,8 @@ category       = {using},
   publisher = {{ACM}},
   year      = {2016},
   doi       = {10.1145/2933575.2934574},
-  pdf-url   = {https://moves.rwth-aachen.de/wp-content/uploads/lics2016_tutorial_katoen.pdf}
+  pdf-url   = {https://moves.rwth-aachen.de/wp-content/uploads/lics2016_tutorial_katoen.pdf},
+  biburl    = {https://dblp.org/rec/conf/lics/Katoen16.bib}
 }
 
 @inproceedings{LVATJ16,
@@ -1303,6 +1653,7 @@ category       = {using},
   pages     = {496--514},
   year      = {2016},
   doi       = {10.1007/978-3-319-47166-2_34},
+  biburl    = {https://dblp.org/rec/conf/isola/LeofanteVAT016.bib}
 }
 
 @inproceedings{QDJJK16,
@@ -1320,6 +1671,7 @@ category       = {using},
   year      = {2016},
   doi       = {10.1007/978-3-319-46520-3_4},
   arxiv-id  = {1602.05113},
+  biburl    = {https://dblp.org/rec/conf/atva/QuatmannD0JK16.bib}
 }
 
 @inproceedings{VJK16,
@@ -1337,6 +1689,7 @@ category       = {using},
   year      = {2016},
   doi       = {10.1007/978-3-319-45477-1_20},
   arxiv-id  = {1604.07474},
+  biburl    = {https://dblp.org/rec/conf/safecomp/0001JK16.bib}
 }
 
 
@@ -1361,7 +1714,8 @@ category       = {using},
   publisher = {Springer},
   year      = {2015},
   doi       = {10.1007/978-3-319-21690-4_13},
-  website   = {https://moves-rwth.github.io/prophesy/},
+  repo      = {https://github.com/moves-rwth/prophesy/},
+  biburl    = {https://dblp.org/rec/conf/cav/DehnertJJCVBKA15.bib}
 }
 
 @inproceedings{QJDWAKB15,
@@ -1381,6 +1735,7 @@ category       = {using},
   publisher = {Springer},
   year      = {2015},
   doi       = {10.1007/978-3-319-19249-9_27},
+  biburl    = {https://dblp.org/rec/conf/fm/QuatmannJDWAKB15.bib}
 }
 
 
@@ -1405,6 +1760,7 @@ category       = {using},
   year      = {2014},
   doi       = {10.1007/978-3-319-11936-6_8},
   arxiv-id  = {1402.2967},
+  biburl    = {https://dblp.org/rec/conf/atva/BrazdilCCFKKPU14.bib}
 }
 
 @inproceedings{DJWAK14,
@@ -1422,6 +1778,7 @@ category       = {using},
   publisher = {Springer},
   year      = {2014},
   doi       = {10.1007/978-3-319-11936-6_11},
+  biburl    = {https://dblp.org/rec/conf/atva/DehnertJWAK14.bib}
 }
 
 
@@ -1439,4 +1796,5 @@ category       = {using},
   pages     = {171--192},
   year      = {1997},
   doi       = {10.1016/S0167-6423(96)00019-6},
+  biburl    = {https://dblp.org/rec/journals/scp/JifengSM97.bib}
 }
