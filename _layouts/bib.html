@@ -1,5 +1,6 @@
 ---
 ---
+<div class="pub-entry">
 {{ reference }}
 {% if entry.note %}
 ({{ entry.note }})
@@ -43,3 +44,10 @@
 	<img alt="repository" src="https://img.shields.io/badge/repository-1B5E20">
 </a>
 {% endif %}
+{% if entry.category == "tool" %}
+<br>
+<button class="btn btn-sm btn-outline-primary" onclick="toggleBibtex(this)">Show BibTeX</button>
+<pre class="bibtex-code" style="display:none;">
+{{ entry.bibtex | escape }}</pre>
+{% endif %}
+</div>

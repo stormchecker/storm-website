@@ -6,11 +6,36 @@ layout: default
 
 {% include includes/toc.html %}
 
-
 ## Storm tool papers
+
+<!--- Script to show bibtex -->
+<script>
+function toggleBibtex(button) {
+  const container = button.closest('.pub-entry');
+  const bib = container.querySelector('.bibtex-code');
+  if (bib.style.display === "none") {
+    bib.style.display = "block";
+    button.innerText = "Hide BibTeX";
+  } else {
+    bib.style.display = "none";
+    button.innerText = "Show BibTeX";
+  }
+}
+
+function copyBibtex(button) {
+  const container = button.closest('.pub-entry');
+  const bib = container.querySelector('.bibtex-code').innerText;
+
+  navigator.clipboard.writeText(bib);
+
+  button.innerText = "Copied!";
+  setTimeout(() => button.innerText = "Copy", 1500);
+}
+</script>
 
 {:.alert .alert-info}
 If you want to cite Storm, please use the most recent paper in this category.
+
 
 {% bibliography --query @*[category=tool] %}
 
