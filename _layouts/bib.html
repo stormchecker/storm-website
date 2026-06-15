@@ -1,40 +1,53 @@
 ---
 ---
+<div class="pub-entry">
 {{ reference }}
 {% if entry.note %}
 ({{ entry.note }})
 {% endif %}
 <br>
-{% if link %}
-<a href="{{link}}" target="_blank">
-	<img alt="{{key}}.pdf" src="https://img.shields.io/static/v1?label=&message=PDF&color=orange">
-</a>
-{% elsif entry.pdf-url%}
-<a href="{{entry.pdf-url}}" target="_blank">
-	<img alt="{{key}}.pdf" src="https://img.shields.io/static/v1?label=&message=PDF&color=orange">
-</a>
-{% endif %}	
 {% if entry.doi %}
 <a href="https://doi.org/{{entry.doi}}" target="_blank">
-	<img alt="DOI: {{entry.doi}}" src="https://img.shields.io/static/v1?label=&message=DOI&color=blue">
+	<img alt="DOI: {{entry.doi}}" src="https://img.shields.io/badge/DOI-0275D8">
 </a>
 {% elsif entry.url %}
 <a href="{{entry.url}}" target="_blank">
-	<img alt="URL: {{entry.url}}" src="https://img.shields.io/static/v1?label=&message=URL&color=blueviolet">
+	<img alt="URL: {{entry.url}}" src="https://img.shields.io/badge/URL-0275D8">
+</a>
+{% endif %}
+{% if link %}
+<a href="{{link}}" target="_blank">
+	<img alt="{{key}}.pdf" src="https://img.shields.io/badge/PDF-7B1FA2">
+</a>
+{% elsif entry.pdf-url%}
+<a href="{{entry.pdf-url}}" target="_blank">
+	<img alt="{{key}}.pdf" src="https://img.shields.io/badge/PDF-7B1FA2">
 </a>
 {% endif %}
 {% if entry.arxiv-id %}
 <a href="https://arxiv.org/abs/{{entry.arxiv-id}}" target="_blank">
-	<img alt="arXiv: {{entry.arxiv-id}}" src="https://img.shields.io/static/v1?label=&message=arXiv&color=A42C25">
+	<img alt="arXiv: {{entry.arxiv-id}}" src="https://img.shields.io/badge/arXiv-B71C1C">
 </a>
 {% endif %}
-{% if entry.material %}
-<a href="{{entry.material}}" target="_blank">
-	<img alt="supplemental material" src="https://img.shields.io/static/v1?label=&message=material&color=889900">
+{% if entry.artifact %}
+<a href="{{entry.artifact}}" target="_blank">
+	<img alt="supplemental material" src="https://img.shields.io/badge/artifact-FF6F00">
 </a>
 {% endif %}
 {% if entry.website %}
 <a href="{{entry.website}}" target="_blank">
-	<img alt="further information" src="https://img.shields.io/static/v1?label=&message=website&color=009999">
+	<img alt="website" src="https://img.shields.io/badge/website-5CB85C">
 </a>
 {% endif %}
+{% if entry.repo %}
+<a href="{{entry.repo}}" target="_blank">
+	<img alt="repository" src="https://img.shields.io/badge/repository-1B5E20">
+</a>
+{% endif %}
+{% if entry.category == "tool" %}
+<br>
+<button class="btn btn-sm btn-outline-primary" onclick="toggleBibtex(this)">Show BibTeX</button>
+<pre class="bibtex-code" style="display:none;">
+{{ entry.bibtex | escape }}</pre>
+{% endif %}
+</div>
