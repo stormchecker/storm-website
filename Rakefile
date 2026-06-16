@@ -16,6 +16,10 @@ task :test do
       'https://doi.org/10.1007/s00165-021-00547-2',
       'https://doi.org/10.1145/2933575.2934574',
       'https://doi.org/10.65109/JAKK2294',
+      # AAAI DOI
+      'https://doi.org/10.1609/AAAI.V35I13.17401',
+      'https://doi.org/10.1609/AAAI.V37I12.26723',
+      'https://doi.org/10.1609/AAAI.V40I43.40944',
       # Other issues
       'https://www.aachener-zeitung.de/wirtschaft/storm-findet-sicherheitskritische-softwarefehler/3962772.html',
       'https://cavconference.org/2017/accepted-papers', # SSL error
