@@ -153,7 +153,7 @@ Storms uses the following additional libraries for some of its functionality.
 - [CMake](https://cmake.org){:target="_blank"}: build system
 - [cpphoafparser](https://automata.tools/hoa/cpphoafparser/){:target="_blank"}: parser of ω-automata
 - [CUDD](https://github.com/ivmai/cudd){:target="_blank"}: an MTBDD library available in the DD-related engines
-- [Eigen](https://eigen.tuxfamily.org){:target="_blank"}: sparse linear algebra
+- [Eigen](https://libeigen.gitlab.io){:target="_blank"}: sparse linear algebra
 - [ExprTk](https://www.partow.net/programming/exprtk/index.html){:target="_blank"}: parsing of mathematical expressions
 - [GTest](https://github.com/google/googletest){:target="_blank"}: testing infrastructure
 - [L3pp](https://github.com/hbruintjes/l3pp){:target="_blank"}: logging
