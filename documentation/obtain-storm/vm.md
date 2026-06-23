@@ -62,7 +62,7 @@ make check
 ```
 
 {:.alert .alert-danger}
-If any problems occurr during this process (in particular when using a standard Ubuntu version) please [let us know](troubleshooting.html#file-an-issue){:.alert-link}.
+If any problems occur during this process (in particular when using a standard Ubuntu version) please [let us know](troubleshooting.html#file-an-issue){:.alert-link}.
 
 ## Storm 1.6.3 (2020/12)
 

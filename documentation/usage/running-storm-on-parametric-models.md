@@ -133,7 +133,7 @@ This produces the following output:
 
 {% include includes/show_output.html class="brp_partitioning" path="parametric/brp_partitioning.out" %}
 
-We can see that for two parameters, Storm even visulalizes the acquired data to give an initial understanding of the region partition. To cover more (or less) parts of the parameter space, use `--partitioning:terminationCondition 0.01` to say that 99% of the parameter space should be covered.
+We can see that for two parameters, Storm even visualizes the acquired data to give an initial understanding of the region partition. To cover more (or less) parts of the parameter space, use `--partitioning:terminationCondition 0.01` to say that 99% of the parameter space should be covered.
 
 
 ## Computing the exact solution function

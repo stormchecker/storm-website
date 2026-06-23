@@ -190,7 +190,7 @@ The trade-off for 12 jobs and 3 servers is depicted by the following curve:
 {% include includes/show_model.html name="PRISM file for stochastic job scheduling (3 jobs and 2 servers)" class="job_sched_file" path="ma/jobs03_2.ma" %}
 
 Again, we assume that the file `jobs03_2.ma` is located in the current directory.
-We obtain the data for tha Pareto plot as above by the following call:
+We obtain the data for the Pareto plot as above by the following call:
 
 ```console
 $ storm --prism jobs03_2.ma --prop "multi(Tmin=? [ F \"all_jobs_finished\"], Pmax=? [ F<=(N/(4*K)) \"half_of_jobs_finished\"])" --multiobjective:precision 0.01 --multiobjective:exportplot plot/
@@ -297,7 +297,7 @@ $ storm --explicit die.tra die.lab --transrew die.tra.rew --prop "R=? [F \"done\
 
 ## Running Storm on GSPNs
 
-The binary `storm-gsnp` handles [Generalized Stochastic Petri Nets (GSPNs)]({{ '/documentation/background/languages.html#gspns' | relative_url }}).
+The binary `storm-gspn` handles [Generalized Stochastic Petri Nets (GSPNs)]({{ '/documentation/background/languages.html#gspns' | relative_url }}).
 GSPNs can be analysed by first converting them to the [JANI format]({{ '/documentation/background/languages.html#jani' | relative_url }}) and then analyzing the JANI model as [shown before](#running-storm-on-jani-input).
 
 ### Running Storm on Pnpro input

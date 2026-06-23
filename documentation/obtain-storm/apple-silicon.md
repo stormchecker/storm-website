@@ -36,7 +36,7 @@ To easily see that your shell runs in x86 mode, you can add the following lines 
 ```console
 # modify the prompt if in x86 mode
 if [[ $(uname -m) == 'x86_64' ]]; then
-	expot PROMPT="%F{cyan}x86%f:$PROMPT"
+	export PROMPT="%F{cyan}x86%f:$PROMPT"
 fi
 ```
 

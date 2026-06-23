@@ -20,7 +20,6 @@ excerpt_separator: <!--more-->
 # Filtering Content
 show_drafts: null
 limit_posts: 0
-future:      false
 unpublished: false
 
 # Plugins
@@ -74,5 +73,4 @@ kramdown:
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   input:          GFM
   hard_wrap:      false
-  footnote_nr:    1
   syntax_highlighter: rouge

@@ -24,10 +24,10 @@ You can see the resulting website by visiting [http://localhost:4000](http://loc
 The CI tests perform additional checks which can also be executed locally:
 To test whether all links in the website are valid run the following:
 ```console
-bundle exec rake test
+docker compose run jekyll bundle exec rake test
 ```
 
 To test whether all links provided in published papers remain valid run the following:
 ```console
-bundle exec rake test_paper_links
+docker compose run jekyll bundle exec rake test_paper_links
 ```
