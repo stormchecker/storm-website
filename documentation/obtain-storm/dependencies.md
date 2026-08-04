@@ -58,9 +58,6 @@ You need to download and install Xcode or its command line tools (CLT) to have t
 
 Furthermore, we recommend the usage of [Homebrew](https://brew.sh){:target="_blank"} to install the missing packages.
 
-{:.alert .alert-danger}
-For troubleshooting building on ARM-based <i class="fa fa-apple" aria-hidden="true"></i>  Apple Silicon CPUs and for building using x86 emulations, please refer to [this page](apple-silicon.html){:.alert-link}.
-
 - Required:
 ``` console
 $ brew install automake cmake boost cln ginac gmp
