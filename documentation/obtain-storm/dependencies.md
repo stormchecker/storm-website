@@ -153,13 +153,13 @@ Storms uses the following additional libraries for some of its functionality.
 - [CMake](https://cmake.org){:target="_blank"}: build system
 - [cpphoafparser](https://automata.tools/hoa/cpphoafparser/){:target="_blank"}: parser of ω-automata
 - [CUDD](https://github.com/ivmai/cudd){:target="_blank"}: an MTBDD library available in the DD-related engines
-- [Eigen](https://eigen.tuxfamily.org){:target="_blank"}: sparse linear algebra
+- [Eigen](https://libeigen.gitlab.io){:target="_blank"}: sparse linear algebra
 - [ExprTk](https://www.partow.net/programming/exprtk/index.html){:target="_blank"}: parsing of mathematical expressions
 - [GTest](https://github.com/google/googletest){:target="_blank"}: testing infrastructure
+- [GTL (Greg's Template Library)](https://github.com/greg7mdp/gtl){:target="_blank"}: hashmap
 - [L3pp](https://github.com/hbruintjes/l3pp){:target="_blank"}: logging
 - [LibArchive](https://www.libarchive.org){:target="_blank"} reading and writing archives
 - [ModernJSON](https://json.nlohmann.me/){:target="_blank"}: parser for JSON
-- [Parallel Hashmap](https://github.com/greg7mdp/parallel-hashmap){:target="_blank"}: hashmap
 - [PRISM](https://www.prismmodelchecker.org){:target="_blank"}: source of some CUDD extensions for MTBDD based model checking
 - [Sylvan](https://trolando.github.io/sylvan/){:target="_blank"}: an MTBDD library available in the DD-related engines
 {:target="_blank"}:

@@ -25,6 +25,7 @@ task :test do
       'https://cavconference.org/2017/accepted-papers', # SSL error
       'https://getfem.org/gmm.html', # SSL issue
       'https://www.gnu.org/software/glpk/', # Often timeout
+      'https://www.libarchive.org', # Often timeout
       'https://soplex.zib.de/', # Captcha
     ],
     typhoeus: {
