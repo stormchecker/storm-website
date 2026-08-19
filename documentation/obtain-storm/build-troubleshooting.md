@@ -28,16 +28,6 @@ We list common issues for specific operating systems.
 
 - Start Xcode at least once such that required components might be installed automatically.
 
-- For macOS 10.14 "Mojave" a common error is the following:
-  ``` console
-  configure: error: cannot run C compiled programs.
-  ```
-  This error might be due to missing header files which can be installed by the following tool:
-  ``` console
-  $ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-  ```
-  For more infos see this [GitHub issue](https://github.com/neovim/neovim/issues/9050#issuecomment-424417456).
-
 ## File an issue
 
 If you encounter problems when building (or using) Storm, feel free to [contact us]({{ '/about.html#people' | relative_url }}) by writing a mail to
