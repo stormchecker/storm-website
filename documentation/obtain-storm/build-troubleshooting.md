@@ -1,12 +1,12 @@
 ---
-title: Troubleshooting
+title: Build Troubleshooting
 layout: default
 documentation: true
 category_weight: 7
 categories: [Obtain Storm]
 ---
 
-<h1>Troubleshooting</h1>
+<h1>Build Troubleshooting</h1>
 
 {% include includes/toc.html %}
 

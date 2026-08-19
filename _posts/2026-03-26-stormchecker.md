@@ -18,4 +18,4 @@ For example, the following command updates the `origin` remote for the Storm rep
 ```
 git remote set-url origin git@github.com:stormchecker/storm.git
 ```
-Please [let us know](https://www.stormchecker.org/documentation/obtain-storm/troubleshooting.html#file-an-issue) in case you found dead links or encounter any issue.
+Please [let us know](https://www.stormchecker.org/documentation/obtain-storm/build-troubleshooting.html#file-an-issue) in case you found dead links or encounter any issue.
