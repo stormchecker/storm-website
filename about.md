@@ -45,11 +45,11 @@ There are several related tools addressing the analysis of probabilistic systems
 
 and have been developed with different target objectives. We believe the characteristics and trade-offs Storm makes to be unique. In the following, we motivate and detail some of the development goals.
 
-### <i class="fa fa-tachometer" aria-hidden="true"></i> Efficient Core
+### <i class="fas fa-gauge-high" aria-hidden="true"></i> Efficient Core
 
 Model checking is both a data- and compute-intense task. In the worst case, the state space of the system has to be searched exhaustively. Probabilistic model checking is even harder in the sense that most techniques require an in-memory representation of the full system to be available and that it relies on solving gigantic equation systems. A crucial aspect of a probabilistic model checker therefore is it's efficiency in terms of time and memory. One of Storm's development goals is to provide a good space-time tradeoff and be faster than other competing tools. As the properties of the systems to analyze vary drastically, Storm has several [engines]({{ '/documentation/background/engines.html' | relative_url }}) that determine which data structures are used to build and analyze a model.
 
-### <i class="fa fa-cogs" aria-hidden="true"></i> Modularity
+### <i class="fas fa-gears" aria-hidden="true"></i> Modularity
 
 Storm's infrastructure is built around the notion of a *solver*. They are small entities that implement one of a set of interfaces. For example, multiple solvers are available for
 
@@ -61,7 +61,7 @@ Storm's infrastructure is built around the notion of a *solver*. They are small 
 
 Encapsulating solvers like this has several key advantages. First of all, it provides easy and coherent access to the tasks commonly involved in probabilistic model checking. New functionality can often be implemented by reusing existing solvers and combining them in a suitable way. Second, it enables Storm to offer multiple high-performance solvers by backing them with different dedicated state-of-the-art libraries to solve the given task. As the structure of input models heavily influences the performances of the solvers and there is no one-size-fits-all solution, this allows to pick opportune solvers based on their strengths. Besides, it may not be possible to include and ship a library because of licensing problems. For example, Storm offers an implementation of the MILP interface using the high-performance yet commercial [Gurobi](https://www.gurobi.com){:target="_blank"} solver. With the flexibility introduced by solvers, users can select Gurobi when it is available to them but can still pick another "fallback" solver otherwise. Furthermore, communities like the SMT community are very active and state-of-the-art solvers of today may be outdated tomorrow. The flexibility in adding new solvers ensures that Storm is easily kept up-to-date without destroying backward compatibility. Finally, it allows to easily develop new solvers with new strengths without knowledge about the global code base. Complying with the interface will yield a solver that can be used anywhere in the existing code base.
 
-### <i class="fa fa-language" aria-hidden="true"></i> Various Input Languages
+### <i class="fas fa-language" aria-hidden="true"></i> Various Input Languages
 
 Let us assume a user is interested in verifying a particular system. In order for a probabilistic model checker to understand the behavior of the system, it needs to be modeled in some formal language the tool is capable of treating. However, different communities and different tools often favor or even demand different input languages. Besides, different modeling languages have different strengths and weaknesses and it depends on the system at hand which language is suited best. Sometimes, the model has already been created by another tool and it cannot be forwarded to another tool without transcription, because the target tool requires the input to be in a different language.
 
@@ -92,7 +92,7 @@ Storm
 ## People
 
 The developers can be reached via
-- <i class="fa fa-envelope" aria-hidden="true"></i> support ```at``` stormchecker.org
+- <i class="fas fa-envelope" aria-hidden="true"></i> support ```at``` stormchecker.org
 
 If you have general feedback or questions on how to use Storm, please send us a mail.
 

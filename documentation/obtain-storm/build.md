@@ -24,7 +24,7 @@ While compiling the source code is not always a breeze (depending on your operat
 
 Currently, we provide support for
 
-- <i class="fa fa-apple" aria-hidden="true"></i> macOS on either x86- or ARM-based CPUs
+- <i class="fa-brands fa-apple" aria-hidden="true"></i> macOS on either x86- or ARM-based CPUs
 - <i class="icon-debian"></i> Debian 12 and higher
 - <i class="icon-ubuntu"></i> Ubuntu 24.04 and higher
 - <i class="icon-archlinux"></i> Arch Linux

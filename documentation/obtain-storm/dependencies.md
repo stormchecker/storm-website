@@ -51,7 +51,7 @@ The installation instructions of the *recommended* dependencies already include 
 We strongly suggest to install the *recommended* dependencies to obtain the full functionality of Storm.
 
 
-### <i class="fa fa-apple" aria-hidden="true"></i> macOS
+### <i class="fa-brands fa-apple" aria-hidden="true"></i> macOS
 
 Make sure that you use a recent macOS version.
 You need to download and install Xcode or its command line tools (CLT) to have the suitable tools needed for compilation. For more details, we refer to [this tutorial](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/){:target="_blank"}.
