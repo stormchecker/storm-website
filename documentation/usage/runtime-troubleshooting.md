@@ -53,7 +53,7 @@ As a result, Storm might encounter numerical imprecisions due to using floating-
 # File an issue
 
 If you encounter problems when using Storm, feel free to [contact us]({{ '/about.html#people' | relative_url }}) by writing a mail to
-- <i class="fa fa-envelope" aria-hidden="true"></i> support ```at``` stormchecker.org.
+- <i class="fas fa-envelope" aria-hidden="true"></i> support ```at``` stormchecker.org.
 
 You may also open an [issue on GitHub](https://github.com/stormchecker/storm/issues){:target="_blank"}.
 In any case, please provide as much information on your problem as you possibly can.
