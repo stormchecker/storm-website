@@ -3,7 +3,7 @@ title: DRN input format
 layout: default
 documentation: true
 category_weight: 2
-categories: [languages]
+categories: [Languages]
 ---
 
 <h1>DRN input format</h1>

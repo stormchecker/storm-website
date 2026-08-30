@@ -81,7 +81,7 @@ While Storm tries to make it easy to include new functionality, a developer stil
 
 Storm
 
-- has roughly ~220k lines of C++ code (as of April 2023)
+- has roughly ~290k lines of C++ code (as of August 2026)
 - is under development since 2012
 - went open source in 2017
 - has over 15 [contributors](https://github.com/stormchecker/storm/graphs/contributors)

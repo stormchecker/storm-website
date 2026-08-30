@@ -46,7 +46,7 @@ Storm's main engine is the sparse engine in the sense that it tends to have the 
 - target query does not involve heavy numerical computations (for example qualitative queries)
 
 **Major restrictions**:
-- only supports [discrete-time models](models.html)
+- only supports [discrete-time models]({{ '/documentation/background/models.html' | relative_url }})
 
 ## Hybrid
 
@@ -75,7 +75,7 @@ All engines so far have the requirement that a representation of the model needs
 - low target precision
 
 **Major restrictions**:
-- only supports [discrete-time models](models.html)
+- only supports [discrete-time models]({{ '/documentation/background/models.html' | relative_url }})
 - only supports reachability objectives
 
 ## Abstraction-Refinement
@@ -92,5 +92,5 @@ This engine relies heavily on SMT solving (more concretely an enumeration of all
 - model is well structured
 
 **Major restrictions**:
-- only supports [discrete-time models](models.html)
+- only supports [discrete-time models]({{ '/documentation/background/models.html' | relative_url }})
 - only supports reachability objectives

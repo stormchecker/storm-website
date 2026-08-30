@@ -17,7 +17,7 @@ To use the containers you first have to install [Docker](https://docs.docker.com
 On macOS you can use [homebrew](https://brew.sh/){:target="_blank"} to install Docker.
 
 ```console
-$ brew cask install docker
+$ brew install --cask docker
 ```
 
 Next you should start the Docker app and its tray icon should be visible.

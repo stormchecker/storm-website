@@ -10,14 +10,14 @@ categories: [Background]
 
 {% include includes/toc.html %}
 
-Storm takes properties in a format that can be described as an "extended subset" of the [PRISM property language](https://www.prismmodelchecker.org/manual/PropertySpecification/Introduction){:target="_blank"}. Alternatively, if the input is given in terms of a [JANI](languages.html#jani) model, the properties are embedded in the model in the appropriate format.
+Storm takes properties in a format that can be described as an "extended subset" of the [PRISM property language](https://www.prismmodelchecker.org/manual/PropertySpecification/Introduction){:target="_blank"}. Alternatively, if the input is given in terms of a [JANI]({{ '/documentation/background/languages.html#jani' | relative_url }}) model, the properties are embedded in the model in the appropriate format.
 
 {:.alert .alert-info}
 For DFTs, GSPNs and probabilistic programs, domain-specific properties can be given. For this, we refer to the guide on how to [run Storm]({{ '/documentation/usage/running-storm.html' | relative_url }}){:.alert-link} on those inputs.
 
 ## Identifying States
 
-Storm allows to identify sets of states by either labels or via the symbolic variables describing the model. Note that it depends on the [input language](languages.html) which of these two ways are enabled. For example, for explicit models, there are no symbolic variables and therefore only labels can be used. For PRISM and JANI input, both labels and expressions over model variables are valid. Finally, the expression `true` can be used to describe the set of all states.
+Storm allows to identify sets of states by either labels or via the symbolic variables describing the model. Note that it depends on the [input language]({{ '/documentation/background/languages.html' | relative_url }}) which of these two ways are enabled. For example, for explicit models, there are no symbolic variables and therefore only labels can be used. For PRISM and JANI input, both labels and expressions over model variables are valid. Finally, the expression `true` can be used to describe the set of all states.
 
 ### Labels
 
