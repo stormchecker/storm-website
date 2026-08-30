@@ -79,7 +79,7 @@ Then, use cmake to configure the build of Storm on your system by invoking
 $ cmake ..
 ```
 
-Check the output carefully for errors and warnings. If all dependencies are properly installed and found, you are ready to build Storm and move to the next step. In case of errors, check the [dependencies](dependencies.html), consult the [troubleshooting guide](troubleshooting.html) and, if necessary, [file an issue](troubleshooting.html#file-an-issue).
+Check the output carefully for errors and warnings. If all dependencies are properly installed and found, you are ready to build Storm and move to the next step. In case of errors, check the [dependencies](dependencies.html), consult the [troubleshooting guide](build-troubleshooting.html) and, if necessary, [file an issue](build-troubleshooting.html#file-an-issue).
 
 ## Build Step
 
@@ -129,4 +129,4 @@ We recommend to execute it to verify that Storm produces correct results on your
 $ make check
 ```
 
-will build and run the tests. In case of errors, please do not hesitate to [file an issue](troubleshooting.html#file-an-issue).
+will build and run the tests. In case of errors, please do not hesitate to [file an issue](build-troubleshooting.html#file-an-issue).

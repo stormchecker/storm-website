@@ -1,12 +1,12 @@
 ---
-title: Troubleshooting
+title: Build Troubleshooting
 layout: default
 documentation: true
 category_weight: 7
 categories: [Obtain Storm]
 ---
 
-<h1>Troubleshooting</h1>
+<h1>Build Troubleshooting</h1>
 
 {% include includes/toc.html %}
 
@@ -27,16 +27,6 @@ We list common issues for specific operating systems.
   ```
 
 - Start Xcode at least once such that required components might be installed automatically.
-
-- For macOS 10.14 "Mojave" a common error is the following:
-  ``` console
-  configure: error: cannot run C compiled programs.
-  ```
-  This error might be due to missing header files which can be installed by the following tool:
-  ``` console
-  $ open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-  ```
-  For more infos see this [GitHub issue](https://github.com/neovim/neovim/issues/9050#issuecomment-424417456).
 
 ## File an issue
 
