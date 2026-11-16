@@ -39,3 +39,4 @@ jobs:
           branch: gh-pages
           folder: _site
           clean-exclude: pr-preview
+          force: false
