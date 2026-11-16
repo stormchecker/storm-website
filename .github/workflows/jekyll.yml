@@ -34,10 +34,8 @@ jobs:
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          cname: www.stormchecker.org
-          # Preserve files already on gh-pages such as pr-preview/* subfolders
-          keep_files: true
+          branch: gh-pages
+          folder: _site
+          clean-exclude: pr-preview
