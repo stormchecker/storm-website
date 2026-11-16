@@ -5,9 +5,7 @@ on:
   pull_request:
     types: [opened, reopened, synchronize, closed]
 
-concurrency:
-  group: preview-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
+concurrency: preview-${{ github.ref }}
 
 permissions:
   contents: write
@@ -20,6 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
+        if: github.event.action != 'closed'
         uses: actions/checkout@v7
       - name: Setup Ruby
         if: github.event.action != 'closed'
@@ -34,7 +33,7 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: ./_site/
+          source-dir: _site
           pages-base-url: https://www.stormchecker.org
           wait-for-pages-deployment: true
           qr-code: false
