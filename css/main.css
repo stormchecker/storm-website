@@ -149,12 +149,12 @@ blockquote.blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
     font-style: italic;
-    color: #777;
+    color: #666;
 }
 blockquote.blockquote p {
     font-size: inherit;
     font-style: italic;
 }
 blockquote.blockquote small {
-    color: #777;
+    color: #666;
 }
