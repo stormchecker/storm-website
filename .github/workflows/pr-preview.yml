@@ -1,0 +1,39 @@
+# Deploy a live preview of each PR to a subfolder of GitHub Pages
+name: Deploy PR preview
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+
+concurrency: preview-${{ github.ref }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  preview:
+    # Only deploy previews for PRs from branches within this repo, not for forks
+    if: github.event.pull_request.head.repo.full_name == github.repository || github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        if: github.event.action != 'closed'
+        uses: actions/checkout@v7
+      - name: Setup Ruby
+        if: github.event.action != 'closed'
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+      - name: Build with Jekyll
+        if: github.event.action != 'closed'
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "/pr-preview/pr-${{ github.event.number }}"
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: _site
+          pages-base-url: https://www.stormchecker.org
+          wait-for-pages-deployment: true
+          qr-code: false

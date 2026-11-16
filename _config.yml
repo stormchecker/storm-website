@@ -9,7 +9,7 @@ includes_dir: resources
 safe:         false
 include:      [".htaccess"]
 exclude:      ["node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/",
-              "paper_links.html", "README.md", "Rakefile"]
+              "paper_links.html", "README.md", "Rakefile", "resources/includes"]
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
