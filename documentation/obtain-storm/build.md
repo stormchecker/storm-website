@@ -104,14 +104,14 @@ If you just want to compile Storm's main command-line interface, typing `make st
 If you have multiple cores at your disposal and at least 8GB of memory, you can execute
 `make -j${NUMBER_OF_CORES}` to speed up compilation.
 
-## Installing Storm <span class="label label-info">optional</span>
+## Installing Storm <span class="badge bg-info">optional</span>
 After the build step was successful, you can install Storm in your system by
 
 ```console
 $ make install
 ```
 
-## Adding Storm to your Path <span class="label label-info">optional</span>
+## Adding Storm to your Path <span class="badge bg-info">optional</span>
 
 If you want to be able to run Storm from anywhere you can either install Storm (see previous step) or you can add it to your path (in the tutorial on how to [run Storm]({{ '/documentation/usage/running-storm.html' | relative_url }}) this is assumed). You can do so, by
 
@@ -121,7 +121,7 @@ $ export PATH=$PATH:$STORM_DIR/build/bin
 
 where `$STORM_DIR` is the environment variable set [earlier](#obtaining-the-source-code).
 
-## Test Step <span class="label label-info">optional</span>
+## Test Step <span class="badge bg-info">optional</span>
 
 We recommend to execute it to verify that Storm produces correct results on your platform. Invoking
 

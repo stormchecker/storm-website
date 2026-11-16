@@ -5,13 +5,15 @@
 
     {% include includes/navbar.html %}
     <div class="container">
-        <ul class="breadcrumb">
-            <li><a href="{{ '/index.html' | relative_url }}">Home</a></li>
-            {% if page.categories and page.categories != empty %}
-            <li>{{ page.categories }}</li>
-            {% endif %}
-            <li class="active">{{ page.title }}</li>
-        </ul>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ '/index.html' | relative_url }}">Home</a></li>
+                {% if page.categories and page.categories != empty %}
+                <li class="breadcrumb-item">{{ page.categories }}</li>
+                {% endif %}
+                <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+            </ol>
+        </nav>
 
         <!--
         <div class="page-header">

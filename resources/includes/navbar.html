@@ -1,32 +1,28 @@
-<div class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <div class="navbar-header">
-            <a href="/index.html" class="navbar-brand"><i class="wi wi-thunderstorm" aria-hidden="true"></i> Storm</a>
-            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main" data-proofer-ignore>
-            <ul class="nav navbar-nav">
+        <a href="/index.html" class="navbar-brand"><i class="wi wi-thunderstorm" aria-hidden="true"></i> Storm</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main" data-proofer-ignore>
+            <ul class="navbar-nav me-auto">
                 {% assign sorted_pages = site.pages | sort: 'category_weight' %}
                 {% assign navigation_pages = site.pages | sort: 'navigation_weight' %}
                 {% for p in navigation_pages %}
                     {% if p.navigation_weight %}
                         {% if p.title == "Documentation" %}
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ p.title }}<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ p.title }}</a>
+                            <ul class="dropdown-menu">
                             {% for cat in site.category-list %}
-                                <li class="container">{{ cat }}</li>
+                                <li><h6 class="dropdown-header">{{ cat }}</h6></li>
                                 {% for page in sorted_pages %}
                                     {% if page.documentation == true and page.categories contains cat %}
-                                        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                                        <li><a class="dropdown-item" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                                     {% endif %}
                                 {% endfor %}
                                 {% unless cat == site.category-list.last %}
-                                <li class="divider"></li>
+                                <li><hr class="dropdown-divider"></li>
                                 {% endunless %}
                             {% endfor %}
                             </ul>
@@ -41,7 +37,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                    <a href="https://github.com/stormchecker/storm" class="nav-link" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i> Source</a>
                 </li>
@@ -50,5 +46,5 @@
                 </li>
             </ul>
         </div>
-      </div>
     </div>
+</nav>
