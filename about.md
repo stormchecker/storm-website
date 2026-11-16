@@ -27,7 +27,7 @@ Formal methods --- and in particular model checking --- has proved to discover i
 We provide a three-part tutorial into Storm on YouTube.
 The tutorial was originally presented at [DisCoTec 2020](https://www.discotec.org/2020/).
 
-<div class="ratio ratio-16x9">
+<div class="ratio ratio-16x9 embed-video">
   <iframe src="https://www.youtube.com/embed/TTfSZGiCQ3I?list=PLtEtbVzif4eg7c76bOzyreJvNVgmrj3Ub"></iframe>
 </div>
 

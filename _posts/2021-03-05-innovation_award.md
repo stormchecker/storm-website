@@ -12,7 +12,7 @@ The annual awards honours ideas and technologies developed by researchers and in
 More information can also be found [here](https://www.rwth-innovation.de/en/aktuelles/aktuelle-detailseiten/presenting-the-rwth-innovation-award-2020).
 
 A short video (in German) presenting the winners can be found below.
-<div class="ratio ratio-16x9">
+<div class="ratio ratio-16x9 embed-video">
     <iframe src="https://www.youtube-nocookie.com/embed/Wqk3d8k2byM?start=197" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
